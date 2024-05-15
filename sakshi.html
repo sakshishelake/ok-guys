@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<center>
+	<h1><title>REGSTRATION FORM</title></h1>
+	</center>
+	<link rel="stylesheet"  href= "style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+	<! -- First we have create registration form -->
+	<div class="container">
+	<div class="form-box">
+	<form action=" " name="Formfull" onsubmit="return  validation">
+	<center>
+	<h2>Register</h2>
+	</center>
+<center>
+	<p id="result">head</p>
+	<div class="input-box">
+		<i class='bx bxs-user'></i>
+		<input type="text" name="Username" placeholder="Username">
+	</div>
+	<div class="input-box">
+		<i class='bx bxs-envelope'></i>
+		<input type="email" name="Email" placeholder="Email">
+	</div>
+	<div class="input-box">
+		<i class='bx bxs-lock-alt'></i>
+		<input type="password" name="Password" placeholder="Password">
+	</div>
+	<div class="input-box">
+		<i class='bx bxs-lock-alt'></i>
+		<input type="password" name="cPassword" placeholder="Confirm Password">
+	</div>
+	<div class="button">
+		<center><input type="submit" class="btn"onclick="validation()" value="Register"></center>
+	</div>
+</center>
+	<div class="group">
+		<span><a href="#">Forget
+-Password</a></span>
+		<span><a href="#">Login</a></span>
+	</div>
+</form>
+	<div class="popup" 
+	<ion-icon name="checkmark-circle-outline"></ion-icon>
+		<h2>Thank you!</h2>
+		<p>Your were Registration Successfully. Thanks! </p>
+		<a href="#"><button onclick="Closeslide()">OK</button></a>
+	
+	</div>
+	</div>
+	<script src="sms.js"></script>
+</body>
+</html>
